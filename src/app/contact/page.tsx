@@ -163,7 +163,7 @@ export default function Contact() {
               {/* Resume Download */}
               <div className="pt-6 border-t border-border">
                 <a
-                  href="/resume.pdf"
+                  href="/SDE.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
@@ -288,7 +288,7 @@ export default function Contact() {
                 Start a Conversation
               </a>
               <a
-                href="/resume.pdf"
+                href="/SDE.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-border bg-card text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-muted transition-colors"

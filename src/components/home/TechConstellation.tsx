@@ -98,7 +98,7 @@ export default function TechConstellation() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Simplified skill relationships
-  const getRelatedSkills = useCallback((skillName: string, allSkills: any[]): { name: string; strength: number }[] => {
+  const getRelatedSkills = useCallback((skillName: string, allSkills: Array<{ name: string; category: string; level: number }>): { name: string; strength: number }[] => {
     const relations: { [key: string]: { name: string; strength: number }[] } = {
       'Python': [
         { name: 'TensorFlow', strength: 0.9 },

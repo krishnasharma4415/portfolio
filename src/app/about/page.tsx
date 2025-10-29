@@ -38,7 +38,7 @@ export default function About() {
                   </div>
                 </div>
                 <a
-                  href="/resume.pdf"
+                  href="/SDE.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"

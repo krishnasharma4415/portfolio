@@ -1,18 +1,41 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function KonamiCode() {
   const [sequence, setSequence] = useState<string[]>([]);
   const [showEasterEgg, setShowEasterEgg] = useState(false);
-  const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; color: string }>>([]);
+  const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; color: string; offsetX: number; offsetY: number }>>([]);
 
   const konamiCode = [
     'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
     'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
     'KeyB', 'KeyA'
   ];
+
+  const triggerEasterEgg = useCallback(() => {
+    setShowEasterEgg(true);
+    
+    // Create particle explosion with deterministic positions
+    const colors = ['#a78bfa', '#fb7185', '#6ee7b7', '#fbbf24'];
+    const newParticles = Array.from({ length: 50 }, (_, i) => ({
+      id: i,
+      x: (typeof window !== 'undefined' ? window.innerWidth : 1200) / 2,
+      y: (typeof window !== 'undefined' ? window.innerHeight : 800) / 2,
+      color: colors[i % colors.length],
+      offsetX: ((i * 137) % 400) - 200, // Deterministic offset
+      offsetY: ((i * 97) % 400) - 200   // Deterministic offset
+    }));
+    
+    setParticles(newParticles);
+
+    // Hide easter egg after animation
+    setTimeout(() => {
+      setShowEasterEgg(false);
+      setParticles([]);
+    }, 3000);
+  }, []);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -29,27 +52,7 @@ export default function KonamiCode() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [sequence]);
-
-  const triggerEasterEgg = () => {
-    setShowEasterEgg(true);
-    
-    // Create particle explosion
-    const newParticles = Array.from({ length: 50 }, (_, i) => ({
-      id: i,
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      color: ['#a78bfa', '#fb7185', '#6ee7b7', '#fbbf24'][Math.floor(Math.random() * 4)]
-    }));
-    
-    setParticles(newParticles);
-
-    // Hide easter egg after animation
-    setTimeout(() => {
-      setShowEasterEgg(false);
-      setParticles([]);
-    }, 3000);
-  };
+  }, [sequence, konamiCode, triggerEasterEgg]);
 
   return (
     <AnimatePresence>
@@ -74,8 +77,8 @@ export default function KonamiCode() {
               animate={{
                 scale: [0, 1, 0],
                 opacity: [1, 1, 0],
-                x: [0, (Math.random() - 0.5) * 400],
-                y: [0, (Math.random() - 0.5) * 400],
+                x: [0, particle.offsetX],
+                y: [0, particle.offsetY],
               }}
               transition={{
                 duration: 2,

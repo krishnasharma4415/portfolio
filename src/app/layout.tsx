@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Krishna Sharma Portfolio",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/profile.jpg",
         width: 1200,
         height: 630,
         alt: "Krishna Sharma - Full-Stack Developer & ML Engineer",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Krishna Sharma - Full-Stack Developer & ML Engineer",
     description: "Portfolio of Krishna Sharma - Full-stack developer and ML engineer passionate about building innovative solutions.",
-    images: ["/og-image.jpg"],
+    images: ["/profile.jpg"],
   },
   verification: {
     google: "your-google-verification-code", // Add your actual verification code
@@ -81,7 +81,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Krishna Portfolio" />
-        <link rel="apple-touch-icon" href="/icon-192.png" />
+        <link rel="apple-touch-icon" href="/profile.jpg" />
         <meta name="msapplication-TileColor" content="#6366f1" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>

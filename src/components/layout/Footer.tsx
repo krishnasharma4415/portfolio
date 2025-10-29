@@ -42,7 +42,7 @@ export default function Footer() {
               <a href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact
               </a>
-              <a href="/resume.pdf" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="/SDE.pdf" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
                 Resume
               </a>
             </div>

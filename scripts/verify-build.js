@@ -24,8 +24,10 @@ const checks = [
   {
     name: 'Required public assets exist',
     check: () => {
-      const requiredFiles = ['favicon.ico', 'manifest.json', 'robots.txt'];
-      return requiredFiles.every(file => fs.existsSync(path.join('public', file)));
+      const requiredFiles = ['manifest.json', 'robots.txt'];
+      const profileExists = fs.existsSync('public/profile.jpg');
+      const resumeExists = fs.existsSync('public/SDE.pdf');
+      return requiredFiles.every(file => fs.existsSync(path.join('public', file))) && profileExists && resumeExists;
     },
     fix: 'Add missing files to /public directory'
   },

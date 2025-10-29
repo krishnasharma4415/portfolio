@@ -108,7 +108,7 @@ export default function Hero() {
             </Link>
             
             <a
-              href="/resume.pdf"
+              href="/SDE.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group enhanced-button magnetic-button border border-border bg-card text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-muted transition-all duration-200 flex items-center space-x-2"
