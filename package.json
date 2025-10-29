@@ -14,7 +14,8 @@
     "preview": "npm run build && npm run start",
     "clean": "rm -rf .next out",
     "verify": "node scripts/verify-build.js",
-    "deploy-ready": "npm run optimize && npm run verify"
+    "validate": "node scripts/validate-config.js",
+    "deploy-ready": "npm run optimize && npm run verify && npm run validate"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
