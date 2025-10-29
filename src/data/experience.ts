@@ -22,16 +22,16 @@ export const experiences: Experience[] = [
     type: "work",
     description: [
       "Developed ML-based log parsing solution processing 15 GB of cybersecurity data daily, achieving 78% accuracy in threat pattern recognition and 85% improvement in data structure standardization.",
-      "Conducted comprehensive analysis identifying 3 critical workflow bottlenecks contributing to 60% slower threat detection times.",
-      "Collaborated with 4 senior security analysts to validate parsing algorithms against real-world attack scenarios, building automated modules that reduced manual preprocessing time by 45%.",
-      "Documented 12 production enhancement recommendations and presented scalability roadmap for handling enterprise-level log volumes exceeding 50 GB daily."
+      "Performed comprehensive workflow analysis identifying 3 critical bottlenecks, resulting in 60% improvement in threat detection processing times.",
+      "Built automated ETL parsing modules reducing manual preprocessing time by 45%, collaborating with 4 senior security analysts to validate algorithms against real-world attack scenarios.",
+      "Documented 12 scalability recommendations and presented roadmap for handling enterprise-level log volumes exceeding 50 GB daily."
     ],
     technologies: ["Python", "Machine Learning", "Data Analysis", "Cybersecurity", "Log Analysis"],
     achievements: [
       "78% accuracy in threat pattern recognition",
-      "85% improvement in data structure standardization",
+      "85% improvement in data structure standardization", 
       "45% reduction in manual preprocessing time",
-      "Processed 15 GB of data daily"
+      "15 GB of cybersecurity data processed daily"
     ],
     logo: "/companies/zeronsec.png"
   },

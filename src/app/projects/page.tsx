@@ -136,9 +136,9 @@ export default function Projects() {
                     )}
                   </div>
 
-                  {/* Key Achievement */}
+                  {/* Key Achievement - Using Success Mint for metrics */}
                   {project.achievements.length > 0 && (
-                    <div className="text-sm text-accent">
+                    <div className="text-sm metric-highlight">
                       ✨ {project.achievements[0]}
                     </div>
                   )}
@@ -150,10 +150,10 @@ export default function Projects() {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:text-primary/80 text-sm font-medium flex items-center space-x-1"
+                        className="accent-cta hover:bg-accent/90 text-sm font-medium flex items-center space-x-1 px-3 py-1.5 rounded-md transition-colors"
                       >
                         <ExternalLink size={14} />
-                        <span>Live Demo</span>
+                        <span>View Project</span>
                       </a>
                     )}
                     {project.githubUrl && (

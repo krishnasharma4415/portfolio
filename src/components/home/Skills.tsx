@@ -22,7 +22,7 @@ export default function Skills() {
             <AnimatedSection key={category.name} delay={categoryIndex * 0.1}>
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className="bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300"
+                className="enhanced-card bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex items-center space-x-3 mb-6">
                   <div className={`w-4 h-4 rounded-full bg-gradient-to-r ${category.color}`} />

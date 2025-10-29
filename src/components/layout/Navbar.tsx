@@ -57,10 +57,9 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors duration-200 relative group"
+                className="enhanced-link text-muted-foreground hover:text-primary transition-colors duration-200 relative group"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full" />
               </Link>
             ))}
           </div>
@@ -111,7 +110,7 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="block text-muted-foreground hover:text-primary transition-colors duration-200"
+                  className="enhanced-link block text-muted-foreground hover:text-primary transition-colors duration-200"
                 >
                   {item.name}
                 </Link>

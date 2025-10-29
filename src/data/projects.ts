@@ -25,10 +25,9 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/krishnasharma4415/shipstream",
     featured: true,
     achievements: [
-      "Architected 4-service pipeline with Redis queue managing concurrent builds",
-      "Engineered TypeScript backend supporting 10+ frameworks (React, Vue, Next.js, Angular)",
-      "Developed real-time React dashboard with deployment tracking and persistent history",
-      "Achieved 100% free-tier operation using Cloudflare R2, Upstash Redis, and Render.com"
+      "Built microservices deployment platform with 100% free-tier operation using Cloudflare R2, Upstash Redis, and Render.com",
+      "Architected 4-service pipeline with Redis queue managing concurrent builds and automated npm workflows for 10+ frameworks",
+      "Developed real-time React dashboard with TypeScript backend, deployment tracking, persistent history, and responsive UI using Vite + TailwindCSS + Shadcn/ui"
     ]
   },
   {
@@ -43,10 +42,9 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/krishnasharma4415/log-anomaly-detection",
     featured: true,
     achievements: [
-      "Implemented and benchmarked 9 ML models including Isolation Forest, LOF, and BERT-based architectures",
-      "Designed leave-one-source-out cross-validation protocol with interpretable pipeline",
-      "Deployed production-ready solution with monitoring dashboards and optimized SQL queries",
-      "Processed millions of records with superior generalization through domain-adversarial training"
+      "Engineered scalable data pipeline processing 16 diverse log sources (Windows, Linux, Hadoop, HDFS, Spark) using PySpark for distributed computing",
+      "Implemented 9 ML models including Isolation Forest, LOF, and BERT-based architectures with domain-adversarial training for cross-source generalization",
+      "Designed ETL workflows with optimized SQL queries, Drain template extraction, and BERT embeddings, evaluated using PR-AUC and Macro-F1 metrics"
     ]
   },
   {
@@ -61,10 +59,9 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/krishnasharma4415/fashion-community",
     featured: true,
     achievements: [
-      "Built scalable REST APIs with MongoDB Atlas for 10,000+ concurrent users",
-      "Implemented hashtag-based search, trending analysis, and explore page with infinite scroll",
-      "Created responsive React UI ensuring seamless cross-platform experience",
-      "Integrated multi-media uploads via Cloudinary with real-time engagement features"
+      "Developed full-stack MERN platform with Google OAuth, JWT authentication, multi-media uploads via Cloudinary, and real-time engagement features",
+      "Built scalable REST APIs with MongoDB Atlas architected to handle 10,000+ concurrent users with efficient database indexing and query optimization",
+      "Implemented hashtag-based search, trending analysis, infinite scroll, and personalized content feed with responsive React UI"
     ]
   },
   {
@@ -79,10 +76,8 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/krishnasharma4415/fashion-recommender",
     featured: false,
     achievements: [
-      "Engineered ETL workflows for data preprocessing and feature transformation",
-      "Applied K-Means clustering for customer segmentation across 5 user groups",
-      "Achieved 78% precision@10 through analytical problem-solving",
-      "Processed 100,000+ user interactions with optimized database queries"
+      "Developed data pipeline processing 100,000+ interactions with normalized SQL database schema for optimized query performance",
+      "Applied K-Means clustering for customer segmentation across 5 user groups, achieving 78% precision@10 through collaborative filtering"
     ]
   }
 ];

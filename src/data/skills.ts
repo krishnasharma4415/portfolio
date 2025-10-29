@@ -18,11 +18,10 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Python", category: "Programming", level: 5 },
       { name: "JavaScript", category: "Programming", level: 5 },
-      { name: "TypeScript", category: "Programming", level: 4 },
       { name: "Java", category: "Programming", level: 4 },
-      { name: "Scala", category: "Programming", level: 3 },
+      { name: "C/C++", category: "Programming", level: 4 },
       { name: "SQL", category: "Programming", level: 5 },
-      { name: "C/C++", category: "Programming", level: 3 },
+      { name: "Scala", category: "Programming", level: 3 },
       { name: "R", category: "Programming", level: 3 },
       { name: "Bash", category: "Programming", level: 4 },
       { name: "PHP", category: "Programming", level: 3 }
@@ -44,18 +43,35 @@ export const skillCategories: SkillCategory[] = [
     ]
   },
   {
-    name: "Databases & Data",
+    name: "Databases & Data Warehousing",
     color: "from-green-400 to-emerald-400",
     skills: [
       { name: "MySQL", category: "Database", level: 5 },
       { name: "MongoDB", category: "Database", level: 5 },
       { name: "PostgreSQL", category: "Database", level: 4 },
-      { name: "SQL Optimization", category: "Database", level: 4 },
-      { name: "Database Indexing", category: "Database", level: 4 },
+      { name: "SQL Query Optimization", category: "Database", level: 4 },
+      { name: "Database Indexing", category: "Database", level: 4 }
+    ]
+  },
+  {
+    name: "Big Data & Distributed Computing",
+    color: "from-cyan-400 to-blue-400",
+    skills: [
       { name: "PySpark", category: "Big Data", level: 4 },
       { name: "Apache Spark", category: "Big Data", level: 4 },
+      { name: "Spark MLlib", category: "Big Data", level: 4 },
       { name: "Hadoop", category: "Big Data", level: 3 },
       { name: "HDFS", category: "Big Data", level: 3 }
+    ]
+  },
+  {
+    name: "Data Engineering & ETL",
+    color: "from-teal-400 to-green-400",
+    skills: [
+      { name: "Data Pipeline Development", category: "Data Engineering", level: 4 },
+      { name: "Data Processing", category: "Data Engineering", level: 5 },
+      { name: "Data Transformation", category: "Data Engineering", level: 4 },
+      { name: "MLflow", category: "MLOps", level: 3 }
     ]
   },
   {
@@ -66,11 +82,10 @@ export const skillCategories: SkillCategory[] = [
       { name: "PyTorch", category: "ML", level: 4 },
       { name: "Scikit-learn", category: "ML", level: 5 },
       { name: "Keras", category: "ML", level: 4 },
-      { name: "Hugging Face", category: "ML", level: 4 },
-      { name: "BERT", category: "NLP", level: 4 },
-      { name: "NLTK", category: "NLP", level: 4 },
-      { name: "Anomaly Detection", category: "ML", level: 4 },
-      { name: "MLflow", category: "MLOps", level: 3 }
+      { name: "Hugging Face Transformers", category: "ML", level: 4 },
+      { name: "NLP (BERT)", category: "NLP", level: 4 },
+      { name: "OpenCV", category: "Computer Vision", level: 3 },
+      { name: "NLTK", category: "NLP", level: 4 }
     ]
   },
   {
@@ -87,17 +102,20 @@ export const skillCategories: SkillCategory[] = [
     ]
   },
   {
-    name: "Data Science Tools",
+    name: "Data Visualization & Analytics",
     color: "from-pink-400 to-rose-400",
     skills: [
-      { name: "Pandas", category: "Data Science", level: 5 },
-      { name: "NumPy", category: "Data Science", level: 5 },
-      { name: "OpenCV", category: "Computer Vision", level: 3 },
       { name: "Tableau", category: "Visualization", level: 4 },
       { name: "Power BI", category: "Visualization", level: 4 },
       { name: "Matplotlib", category: "Visualization", level: 4 },
       { name: "Seaborn", category: "Visualization", level: 4 },
-      { name: "Plotly", category: "Visualization", level: 4 }
+      { name: "Plotly", category: "Visualization", level: 4 },
+      { name: "Excel", category: "Analytics", level: 4 },
+      { name: "Pandas", category: "Analytics", level: 5 },
+      { name: "NumPy", category: "Analytics", level: 5 },
+      { name: "Statistical Analysis", category: "Analytics", level: 4 },
+      { name: "Anomaly Detection", category: "Analytics", level: 4 },
+      { name: "Customer Segmentation", category: "Analytics", level: 4 }
     ]
   }
 ];

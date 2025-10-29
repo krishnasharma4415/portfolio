@@ -1,0 +1,16 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ee7b7;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="#252535"/>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <text x="400" y="180" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#e9e9f0" text-anchor="middle">Log Anomaly</text>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#e9e9f0" text-anchor="middle">Detection</text>
+  <text x="400" y="260" font-family="Arial, sans-serif" font-size="24" fill="#9898a8" text-anchor="middle">ML System</text>
+  <rect x="50" y="300" width="700" height="100" rx="12" fill="#1c1c28" opacity="0.8"/>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="18" fill="#a78bfa" text-anchor="middle">Python • PySpark • BERT • TensorFlow</text>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="16" fill="#6ee7b7" text-anchor="middle">78% Accuracy Across 16 Sources</text>
+</svg>

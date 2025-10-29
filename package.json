@@ -3,10 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "type-check": "tsc --noEmit",
+    "optimize": "npm run lint:fix && npm run type-check && npm run build",
+    "preview": "npm run build && npm run start",
+    "clean": "rm -rf .next out",
+    "verify": "node scripts/verify-build.js",
+    "deploy-ready": "npm run optimize && npm run verify"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

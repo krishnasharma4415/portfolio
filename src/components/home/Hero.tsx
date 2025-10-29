@@ -3,34 +3,45 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import AnimatedCounter from "@/components/shared/AnimatedCounter";
 
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 gradient-bg" />
+      {/* Animated Background gradient */}
+      <div className="absolute inset-0 animated-gradient-bg" />
       
-      {/* Animated background elements */}
+      {/* Floating background elements */}
       <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 bg-primary/20 rounded-full"
-            initial={{
-              x: Math.random() * 1200,
-              y: Math.random() * 800,
-            }}
-            animate={{
-              x: Math.random() * 1200,
-              y: Math.random() * 800,
-            }}
-            transition={{
-              duration: Math.random() * 10 + 20,
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-          />
-        ))}
+        {[...Array(15)].map((_, i) => {
+          // Use deterministic positions based on index to avoid hydration issues
+          const initialX = (i * 137) % 1200; // Use prime number for better distribution
+          const initialY = (i * 97) % 800;
+          const animateX = ((i + 7) * 149) % 1200;
+          const animateY = ((i + 3) * 113) % 800;
+          const duration = 25 + (i % 15);
+          
+          return (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 bg-primary/20 rounded-full floating"
+              initial={{
+                x: initialX,
+                y: initialY,
+              }}
+              animate={{
+                x: animateX,
+                y: animateY,
+              }}
+              transition={{
+                duration: duration,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut",
+              }}
+            />
+          );
+        })}
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -90,7 +101,7 @@ export default function Hero() {
           >
             <Link
               href="/projects"
-              className="group bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 flex items-center space-x-2"
+              className="group enhanced-button magnetic-button bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-all duration-200 flex items-center space-x-2"
             >
               <span>View My Work</span>
               <ExternalLink size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -100,7 +111,7 @@ export default function Hero() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="group border border-border bg-card text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-muted transition-all duration-200 flex items-center space-x-2"
+              className="group enhanced-button magnetic-button border border-border bg-card text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-muted transition-all duration-200 flex items-center space-x-2"
             >
               <Download size={20} />
               <span>Download Resume</span>
@@ -115,14 +126,19 @@ export default function Hero() {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12"
           >
             {[
-              { label: "Projects Built", value: "15+" },
-              { label: "Technologies", value: "25+" },
-              { label: "Experience", value: "2+ Years" },
-              { label: "Certifications", value: "3" },
+              { label: "Major Projects", value: 4, suffix: "" },
+              { label: "Technologies Mastered", value: 35, suffix: "+" },
+              { label: "Data Processed (GB)", value: 15, suffix: "+" },
+              { label: "AWS Certifications", value: 3, suffix: "" },
             ].map((stat, index) => (
               <div key={stat.label} className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-primary">
-                  {stat.value}
+                <div className="text-2xl md:text-3xl font-bold">
+                  <AnimatedCounter 
+                    end={stat.value} 
+                    suffix={stat.suffix}
+                    duration={1.5}
+                    className="text-primary"
+                  />
                 </div>
                 <div className="text-sm text-muted-foreground mt-1">
                   {stat.label}

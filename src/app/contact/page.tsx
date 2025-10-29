@@ -253,7 +253,7 @@ export default function Contact() {
                   type="submit"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors flex items-center justify-center space-x-2"
+                  className="w-full accent-cta hover:bg-accent/90 px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
                 >
                   <Send size={20} />
                   <span>Send Message</span>
@@ -283,7 +283,7 @@ export default function Contact() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:krishnajan2004@gmail.com"
-                className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                className="accent-cta hover:bg-accent/90 px-8 py-4 rounded-lg font-semibold transition-colors"
               >
                 Start a Conversation
               </a>

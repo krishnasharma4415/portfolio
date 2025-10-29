@@ -86,9 +86,9 @@ export default function FeaturedProjects() {
                     )}
                   </div>
 
-                  {/* Key Achievement */}
+                  {/* Key Achievement - Using Success Mint for metrics */}
                   {project.achievements.length > 0 && (
-                    <div className="text-sm text-accent">
+                    <div className="text-sm" style={{ color: 'var(--success)' }}>
                       ✨ {project.achievements[0]}
                     </div>
                   )}
@@ -102,7 +102,7 @@ export default function FeaturedProjects() {
           <div className="text-center mt-12">
             <Link
               href="/projects"
-              className="inline-flex items-center space-x-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center space-x-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
             >
               <span>View All Projects</span>
               <ExternalLink size={20} />

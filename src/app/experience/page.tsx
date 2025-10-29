@@ -91,8 +91,10 @@ export default function Experience() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {exp.achievements.map((achievement, i) => (
                           <div key={i} className="flex items-start space-x-2">
-                            <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                            <span className="text-sm text-muted-foreground">{achievement}</span>
+                            <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: 'var(--success)' }} />
+                            <span className={`text-sm ${achievement.match(/\d+%|\d+\s*(GB|users|records)/i) ? 'metric-highlight' : 'text-muted-foreground'}`}>
+                              {achievement}
+                            </span>
                           </div>
                         ))}
                       </div>
