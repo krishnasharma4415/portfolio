@@ -1,149 +1,76 @@
-# Krishna Sharma - Portfolio Website
+<h2 align="center">
+  Portfolio Website - v2.0<br/>
+  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
+</h2>
+<div align="center">
+  <img alt="Demo" src="./Images/readme-img1.png" />
+</div>
 
-A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS, featuring the Twilight Lavender color palette.
+<br/>
 
-## 🌟 Features
+<center>
 
-- **Modern Design**: Clean, professional design with Twilight Lavender color scheme
-- **Responsive**: Fully responsive design that works on all devices
-- **Smooth Animations**: Powered by Framer Motion for engaging user experience
-- **Fast Performance**: Built with Next.js 14 and optimized for speed
-- **Type Safe**: Full TypeScript implementation
-- **Accessible**: Built with accessibility best practices
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
+![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
+![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
 
-## 🎨 Color Palette
+</center>
 
-- **Background**: #1c1c28 (Deep Purple-Gray)
-- **Surface**: #252535 (Elevated Purple)
-- **Border**: #35354a (Muted Border)
-- **Primary**: #a78bfa (Soft Lavender)
-- **Accent**: #fb7185 (Coral Pink)
-- **Text Primary**: #e9e9f0 (Cool White)
-- **Text Secondary**: #9898a8 (Lavender Gray)
-- **Success**: #6ee7b7 (Mint)
+<h3 align="center">
+    🔹
+    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
+    🔹
+    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
+</h3>
 
-## 🛠️ Tech Stack
+## TL;DR
 
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Components**: Shadcn/ui
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
 
-## 📁 Project Structure
+## Built With
 
-```
-portfolio/
-├── src/
-│   ├── app/                 # Next.js app router pages
-│   │   ├── about/
-│   │   ├── projects/
-│   │   ├── experience/
-│   │   ├── contact/
-│   │   └── layout.tsx
-│   ├── components/          # React components
-│   │   ├── layout/         # Layout components
-│   │   ├── home/           # Home page components
-│   │   └── shared/         # Shared components
-│   ├── data/               # Data files
-│   │   ├── projects.ts
-│   │   ├── skills.ts
-│   │   └── experience.ts
-│   └── lib/                # Utility functions
-├── public/                 # Static assets
-└── README.md
-```
+My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
-## 🚀 Getting Started
+This project was built using these technologies.
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd portfolio
-   ```
+- React.js
+- Node.js
+- Express.js
+- CSS3
+- VsCode
+- Vercel
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+## Features
 
-3. **Run the development server**
-   ```bash
-   npm run dev
-   ```
+**📖 Multi-Page Layout**
 
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
 
-## 📝 Customization
+**📱 Fully Responsive**
 
-### Personal Information
-Update the following files with your information:
-- `src/data/projects.ts` - Your projects
-- `src/data/skills.ts` - Your skills and expertise
-- `src/data/experience.ts` - Work experience and education
-- `src/app/layout.tsx` - Meta information and SEO
+## Getting Started
 
-### Content
-- Replace project images in `public/projects/`
-- Add your resume as `public/resume.pdf`
-- Update social media links in components
+Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
 
-### Styling
-- Modify color palette in `src/app/globals.css`
-- Customize animations in component files
-- Adjust responsive breakpoints as needed
+## 🛠 Installation and Setup Instructions
 
-## 📱 Pages
+1. Installation: `npm install`
 
-- **Home**: Hero section, featured projects, and skills overview
-- **About**: Personal story, journey, and detailed skills
-- **Projects**: Complete project portfolio with filtering
-- **Experience**: Work experience, education, and certifications
-- **Contact**: Contact form and social links
+2. In the project directory, you can run: `npm start`
 
-## 🎯 Key Features
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits.
 
-### Animations
-- Smooth page transitions
-- Scroll-triggered animations
-- Hover effects and micro-interactions
-- Loading states and transitions
+## Usage Instructions
 
-### Responsive Design
-- Mobile-first approach
-- Tablet and desktop optimizations
-- Flexible grid layouts
-- Adaptive typography
+Open the project folder and Navigate to `/src/components/`. <br/>
+You will find all the components used and you can edit your information accordingly.
 
-### Performance
-- Optimized images and assets
-- Code splitting and lazy loading
-- SEO optimized
-- Fast loading times
+### Show your support
 
-## 🔧 Scripts
+Give a ⭐ if you like this website!
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Feel free to fork this project and customize it for your own portfolio. If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
-
-## 📞 Contact
-
-- **Email**: krishnajan2004@gmail.com
-- **LinkedIn**: [Krishna Sharma](https://www.linkedin.com/in/krishna-sharma441500)
-- **GitHub**: [krishnasharma4415](https://github.com/krishnasharma4415)
-
----
-
-Built with ❤️ by Krishna Sharma
+<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>

@@ -1,27 +1,15 @@
 {
-  "name": "Krishna Sharma - Portfolio",
-  "short_name": "Krishna Portfolio",
-  "description": "Portfolio of Krishna Sharma - Full-stack developer and ML engineer",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#6366f1",
-  "orientation": "portrait-primary",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
-      "src": "/profile.jpg",
-      "sizes": "192x192",
-      "type": "image/jpeg",
-      "purpose": "any"
-    },
-    {
-      "src": "/profile.jpg",
-      "sizes": "512x512", 
-      "type": "image/jpeg",
-      "purpose": "any"
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
     }
   ],
-  "categories": ["portfolio", "developer", "technology"],
-  "lang": "en",
-  "dir": "ltr"
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
